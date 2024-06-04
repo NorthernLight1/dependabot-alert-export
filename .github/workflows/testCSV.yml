@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v3.4.1
   
       - name: Export Dependabot alerts
-        uses: affrae/dependabot-alert-export@main
+        uses: NorthernLight1/dependabot-alert-export@main
         with:        
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           org_name: 'octodemo'
