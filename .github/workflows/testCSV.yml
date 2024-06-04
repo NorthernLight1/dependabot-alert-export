@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v4
   
       - name: Export Dependabot alerts
-        uses: NorthernLight1/dependabot-alert-export@v1.0
+        uses: NorthernLight1/dependabot-alert-export@main
         with:        
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           org_name: 'NorthernLight1'
