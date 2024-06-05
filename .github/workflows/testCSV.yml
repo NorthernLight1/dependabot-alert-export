@@ -16,16 +16,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-        with:
-          clean: true
-
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4
-  
       - name: Export Dependabot alerts
-        uses: NorthernLight1/dependabot-alert-export@main
+        uses: NorthernLight1/dependabot-alert-export@v1.0
         with:        
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           org_name: 'NorthernLight1'
